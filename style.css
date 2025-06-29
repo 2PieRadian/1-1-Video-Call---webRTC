@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background: rgb(48, 51, 56);
+  color: white;
+  padding: 10px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 20px 0 0;
+}
+
+button:hover {
+  background-color: rgb(31, 32, 34);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.localDiv,
+.remoteDiv {
+  height: 400px;
+  width: 50vw;
+  border: 5px solid rgb(74, 86, 99);
+}
+
+#localVideo,
+#remoteVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .localDiv,
+  .remoteDiv {
+    height: 200px;
+    width: 100%;
+  }
+}
